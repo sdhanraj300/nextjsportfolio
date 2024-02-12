@@ -3,14 +3,18 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
 import {
   DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
+  MoonIcon,
   PinterestIcon,
+  SunIcon,
   TwitterIcon,
 } from "./Icons";
 const Navbar = () => {
+  const [mode, setMode] = useThemeSwitcher();
   const router = useRouter();
   const CustomLink = ({ href, title, className = "" }) => {
     return (
@@ -22,6 +26,7 @@ const Navbar = () => {
           absolute left-0 -bottom-0.5 
           group-hover:w-full 
           transition-[width] ease duration-300 
+          dark:bg-light
           ${router.asPath === href ? "w-full" : "w-0"}`}
         >
           &nbsp;
@@ -31,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="dark:text-light w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -69,7 +74,7 @@ const Navbar = () => {
         <motion.a
           href="https://www.pinterest.com/"
           target="_blank"
-          className="w-6 mx-3"
+          className="w-6 mx-3 bg-light rounded-full "
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -84,6 +89,18 @@ const Navbar = () => {
         >
           <DribbbleIcon />
         </motion.a>
+        <button
+          onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+          className={`dark: w-8 h-8 flex items-center justify-center rounded-full bg-dark text-white ml-3 p-1
+          ${mode === "light" ? "bg-dark text-dark" : "bg-dark text-light"}
+          `}
+        >
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />

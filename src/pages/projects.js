@@ -14,13 +14,13 @@ const projects = () => {
       <article
         className="relative p-12 w-full flex items-center justify-between 
       rounded-3xl border border-solid border-dark bg-light shadow-2xl
-      rounded-br-2xl
+      rounded-br-2xl dark:bg-dark dark:border-light dark:shadow-light
       "
       >
         <div
           className="absolute top-0 -right-3 -z-10
           w-[98%] h-[104%] rounded-[2.5rem] bg-dark
-          rounded-br-3xl
+          rounded-br-3xl dark:bg-light dark:border-dark dark:shadow-dark
           "
         />
         <Link
@@ -29,6 +29,8 @@ const projects = () => {
           className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         >
           <FramerImage
+            priority={true}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw,33vw"
             src={img}
             alt={title}
             className="w-full h-auto"
@@ -37,17 +39,21 @@ const projects = () => {
           />
         </Link>
         <div className="w-1/2 flex items-start flex-col pl-6 justify-between">
-          <span className="text-primary font-medium text-xl">{type}</span>
+          <span className="text-primary font-medium text-xl dark:-primaryDark">
+            {type}
+          </span>
           <Link
             href={link}
             target={"_blank"}
             className="hover:underline underline-offset-2"
           >
-            <h2 className="my-2 w-full text-left text-4xl font-bold">
+            <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
               {title}
             </h2>
           </Link>
-          <p className="my-2 font-medium text-dark">{summary}</p>
+          <p className="my-2 font-medium text-dark dark:text-light">
+            {summary}
+          </p>
           <div className="mt-2 flex items-center">
             <Link href={github} target={"_blank"} className="w-10">
               <GithubIcon />
@@ -55,7 +61,9 @@ const projects = () => {
             <Link
               href={link}
               target={"_blank"}
-              className="ml-4 rounded-lg  bg-dark text-light p-2 px-6 text-lg font-semibold 
+              className="ml-4 rounded-lg
+              bg-dark text-light p-2 px-6 text-lg font-semibold 
+              dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light
             "
             >
               Visit The Project!
@@ -69,13 +77,15 @@ const projects = () => {
     return (
       <article
         className="w-full flex-col flex items-center justify-center rounded-2xl border border-solid border-dark
-      bg-light shadow-2xl p-6 relative
+      bg-light shadow-2xl p-6 relative dark:bg-dark rounded-br-2xl
+      dark:border-light dark:shadow-light
       "
       >
         <div
           className="absolute top-0 -right-3 -z-10
           w-[98%] h-[104%] rounded-[2rem] bg-dark
           rounded-br-3xl
+          dark:bg-light dark:border-dark dark:shadow-dark
           "
         />
         <Link
@@ -92,7 +102,9 @@ const projects = () => {
           />
         </Link>
         <div className="w-full flex items-start flex-col mt-4 justify-between">
-          <span className="text-primary font-medium text-xl">{type}</span>
+          <span className="text-primary font-medium text-xl dark:text-primaryDark">
+            {type}
+          </span>
           <Link
             href={link}
             target={"_blank"}
@@ -127,7 +139,7 @@ const projects = () => {
           <meta name="description" content="Projects page of Dhanraj" />
         </title>
       </Head>
-      <main className="w-full flex items-center justify-center flex-col mb-16">
+      <main className="w-full flex items-center justify-center flex-col mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Imagination Trumps Knowledge!"

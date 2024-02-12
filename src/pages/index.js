@@ -12,13 +12,19 @@ export default function Home() {
       <main
         className="flex items-center
         text-dark w-full min-h-screen
-
+        dark:text-light
         "
       >
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
-              <Image src={profilePic} alt="dhanraj" className="w-full h-auto" />
+              <Image
+                src={profilePic}
+                alt="dhanraj"
+                className="w-full h-auto"
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw,33vw"
+              />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
@@ -40,6 +46,8 @@ export default function Home() {
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent transition duration-300 ease-in-out
                 hover:border-dark hover:shadow-lg
+                dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light
+                hover:dark:border-light dark:hover:border-dark
                 "
                   download={true}
                 >
@@ -47,7 +55,7 @@ export default function Home() {
                 </Link>
                 <Link
                   className="ml-4 text-lg font-medium capitalize text-dark transition duration-300 ease-in-out
-                  underline 
+                  underline dark:text-light hover:text-dark hover:underline
                   "
                   href="mailto:dhanraj02025@gmail.com"
                   target={"_blank"}
