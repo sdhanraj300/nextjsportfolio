@@ -1,14 +1,24 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import { Head } from "next/document";
+import profilePic from "../../public/images/profile/developer-pic-1.jpeg";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import TransitionEffect from "@/components/TransitionEffect";
 export default function Home() {
   return (
     <>
+      {/* <Head>
+        <title>Portfolio Of Dhanraj Singh</title>
+        <meta
+          name="description"
+          content="Portfolio of an aspiring web developer"
+        />
+      </Head> */}
+      <TransitionEffect />
       <main
         className="flex items-center
         text-dark w-full min-h-screen
@@ -21,7 +31,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="dhanraj"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className="w-[75%] rounded-full h-auto lg:hidden md:inline-block md:w-full"
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw,33vw"
               />

@@ -7,6 +7,7 @@ import Image from "next/image";
 import articleImg from "../../public/images/articles/smooth scrolling in reactjs.png";
 import article2Img from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 const FeaturedArticle = ({ img, title, link, time, summary }) => {
@@ -131,6 +132,7 @@ const articles = () => {
           <meta name="description" content="Articles page of Dhanraj" />
         </title>
       </Head>  */}
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change the Word!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />

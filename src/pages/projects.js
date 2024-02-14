@@ -7,6 +7,7 @@ import Layout from "@/components/Layout";
 import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import TransitionEffect from "@/components/TransitionEffect";
 const projects = () => {
   const FramerImage = motion(Image);
   const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -141,6 +142,7 @@ const projects = () => {
           <meta name="description" content="Projects page of Dhanraj" />
         </title>
       </Head>
+      <TransitionEffect/>
       <main className="w-full flex items-center justify-center flex-col mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

@@ -4,10 +4,11 @@ import Image from "next/image";
 import Layout from "@/components/Layout";
 import { useRef, useEffect } from "react";
 import { useMotionValue, useInView, useSpring } from "framer-motion";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/images/profile/developer-pic-1.jpeg";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/TransitionEffect";
 const AnimatedNumber = ({ value }) => {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
@@ -41,7 +42,7 @@ const about = () => {
           <meta name="description" content="About page of Dhanraj" />
         </title>
       </Head>
-
+      <TransitionEffect/>
       <main
         className="flex w-full flex-col items-center justify-center
       dark:bg-dark dark:text-light/50
@@ -67,9 +68,9 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium ">
-                Hi, I'm Dhanraj, an aspiring web developer and UI/UX designer
+                Hi, I'm Dhanraj, an aspiring web developer
                 with a passion for creating beautiful, functional, and
-                user-centered digital experiences. I I am always looking for new
+                user-centered digital experiences. I am always looking for new
                 and innovative ways to bring my visions to life.
               </p>
               <p className="my-4 font-medium ">
@@ -148,7 +149,7 @@ const about = () => {
             </div>
           </div>
           <Skills />
-          <Experience />
+          {/* <Experience /> */}
           <Education />
         </Layout>
       </main>
