@@ -113,16 +113,16 @@ const about = () => {
               xl:col-span-8 xl:flex-row xl:items-center md:order-3
             "
             >
-              <div className="flex flex-col items-end justify-center xl:items-center xl:items-center">
+              <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-6xl xs:text-4xl">
                   <AnimatedNumber value={50} /> +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl xs:text-sm font-medium capitalize text-dark/75 dark:text-light/75">
                   Projects
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-6xl xs:text-4xl">
                   <AnimatedNumber value={40} /> +
                 </span>
                 <h2
@@ -134,7 +134,7 @@ const about = () => {
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-6xl xs:text-4xl">
                   <AnimatedNumber value={2} /> +
                 </span>
                 <h2

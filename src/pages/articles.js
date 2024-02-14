@@ -41,7 +41,7 @@ const FeaturedArticle = ({ img, title, link, time, summary }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4 xs:text-lg">
           {title}
         </h2>
       </Link>
@@ -89,7 +89,7 @@ const MovingImage = ({ title, img, link }) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+        className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
       />
     </Link>
   );
@@ -103,7 +103,7 @@ const Article = ({ img, title, date, link }) => {
       viewport={{ once: true }}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center
     justify-between bg-light text-dark first:mt-0 border border-solid border-dark
-    border-r-4 border-b-4 
+    border-r-4 border-b-4 sm:flex-col
     dark:bg-dark dark:border-light
     dark:text-light dark:border-r-4 dark:border-b-4
     "
@@ -115,7 +115,7 @@ const Article = ({ img, title, date, link }) => {
         priority={true}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw,33vw"
       />
-      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm">
         {date}
       </span>
     </motion.li>
@@ -133,8 +133,8 @@ const articles = () => {
       </Head>  */}
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Words Can Change the Word!" className="mb-16" />
-          <ul className="grid grid-cols-2 gap-16 ">
+          <AnimatedText text="Words Can Change the Word!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
+          <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
             <FeaturedArticle
               img={articleImg}
               link={"/"}
