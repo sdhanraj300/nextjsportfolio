@@ -149,7 +149,10 @@ const projects = () => {
             text="Imagination Trumps Knowledge!"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+          <div>
+            This Section is under construction. Please visit later.
+          </div>
+          {/* <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title={"Crypto Screener Application"}
@@ -222,7 +225,7 @@ const projects = () => {
                 type={"React"}
               />
             </div>
-          </div>
+          </div> */}
         </Layout>
       </main>
     </>

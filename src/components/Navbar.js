@@ -97,7 +97,7 @@ const Navbar = () => {
           <CustomLink href="/articles" title="Articles" className="ml-4" />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
-          <motion.a
+          {/* <motion.a
             href="https://twitter.com/"
             target="_blank"
             className="w-6 mx-3"
@@ -105,9 +105,9 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <TwitterIcon />
-          </motion.a>
+          </motion.a> */}
           <motion.a
-            href="https://github.com"
+            href="https://github.com/sdhanraj300"
             target="_blank"
             className="w-6 mx-3 "
             whileHover={{ y: -2 }}
@@ -116,7 +116,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/sdhanraj300"
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -124,7 +124,7 @@ const Navbar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href="https://www.pinterest.com/"
             target="_blank"
             className="w-6 mx-3 bg-light rounded-full "
@@ -141,7 +141,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <DribbbleIcon />
-          </motion.a>
+          </motion.a> */}
           <button
             onClick={() => setMode(mode === "dark" ? "light" : "dark")}
             className={`dark: w-8 h-8 flex items-center justify-center rounded-full bg-dark text-white ml-3 p-1

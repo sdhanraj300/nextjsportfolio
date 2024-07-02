@@ -27,7 +27,7 @@ const HireMe = () => {
         hover:bg-light hover:text-dark transition duration-300 ease-in-out
         w-20 h-20
         "
-          href="mailto:dhanraj02025@gmail.com"
+          href="https://www.linkedin.com/in/sdhanraj300/"
           target={"_blank"}
         >
           Hire Me!

@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import { Head } from "next/document";
+// import { Head } from "next/document";
 import profilePic from "../../public/images/profile/developer-pic-1.jpeg";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
@@ -54,7 +54,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/dummy.pdf"
+                  href="/ResumeJuly.pdf"
                   target={"_blank"}
                   className="bg-dark flex items-center text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
@@ -71,7 +71,7 @@ export default function Home() {
                   className="ml-4 text-lg font-medium capitalize text-dark transition duration-300 ease-in-out
                   underline dark:text-light hover:text-dark hover:underline md:text-base
                   "
-                  href="mailto:dhanraj02025@gmail.com"
+                  href="https://www.linkedin.com/in/sdhanraj300/"
                   target={"_blank"}
                 >
                   Contact

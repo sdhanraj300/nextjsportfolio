@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
-import { Head } from "next/document";
+// import { Head } from "next/document";
 import Link from "next/link";
 import Image from "next/image";
 import articleImg from "../../public/images/articles/smooth scrolling in reactjs.png";
@@ -136,7 +136,8 @@ const articles = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change the Word!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
-          <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
+          <div>This Page is under construction.</div>
+          {/* <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
             <FeaturedArticle
               img={articleImg}
               link={"/"}
@@ -194,7 +195,7 @@ const articles = () => {
               link={"/"}
               img={article2Img}
             />
-          </ul>
+          </ul> */}
         </Layout>
       </main>
     </>
