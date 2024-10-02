@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";
 // import { Head } from "next/document";
-import profilePic from "../../public/images/profile/developer-pic-1.jpeg";
+import profilePic from "../../public/images/profile/developer-pic-1.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
@@ -54,7 +54,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/ResumeJuly.pdf"
+                  href="/DhanrajResume.pdf"
                   target={"_blank"}
                   className="bg-dark flex items-center text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark

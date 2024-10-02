@@ -14,9 +14,9 @@ const HireMe = () => {
       relative 
       "
       >
-        <CircularText
+        {/* <CircularText
           className={"fill-dark animate-spin-slow dark:fill-light"}
-        />
+        /> */}
         <Link
           className="flex items-center justify-center absolute left-1/2 top-1/2
         -translate-x-1/2 -translate-y-1/2

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Layout from "@/components/Layout";
 import { useRef, useEffect } from "react";
 import { useMotionValue, useInView, useSpring } from "framer-motion";
-import profilePic from "../../public/images/profile/developer-pic-1.jpeg";
+import profilePic from "../../public/images/profile/developer-pic-1.jpg";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
@@ -53,14 +53,14 @@ const about = () => {
             text="Passion Fuels Purpose!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+          <div className="grid w-full grid-cols-8 text-xl font-semibold gap-16 sm:gap-8">
             <div
               className="col-span-3 flex flex-col items-start
             justify-start xl:col-span-4 md:order-2 md:col-span-8
             "
             >
               <h2
-                className="mb-4 text-lg font-bold 
+                className="mb-4 text-3xl font-bold 
                 text-dark/75 uppercase 
                 
                 dark:text-light/75"
@@ -74,16 +74,7 @@ const about = () => {
                 and innovative ways to bring my visions to life.
               </p>
               <p className="my-4 font-medium ">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating intuitive,
-                enjoyable experiences for users.
-              </p>
-              <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                I am a full-stack developer with NextJS as my preferred stack.
               </p>
             </div>
             <div
